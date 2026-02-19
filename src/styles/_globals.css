@@ -3,6 +3,8 @@
 
 @theme {
     --default-font-family: "Outfit", sans-serif;
+    --font-mono: "PT Sans", sans-serif;
+    /*  asi o con utility */
     --color-coffee-50: #fcf8ee;
     --color-coffee-100: #ebe7de;
     --color-coffee-200: #ead59d;
@@ -14,4 +16,19 @@
     --color-coffee-800: #7c3f24;
     --color-coffee-900: #5e311e;
     --color-coffee-950: #3a1a0e;
+}
+
+@utility font-secondary {
+    font-family: "PT Sans", sans-serif;
+}
+
+@utility coffee-icon {
+    content: '';
+    background-image: url('../assets/img/coffee.svg');
+    background-size: 6rem;
+    background-position: center;
+    width: 6rem;
+    height: 6rem;
+    display: block;
+    margin-inline: auto;
 }

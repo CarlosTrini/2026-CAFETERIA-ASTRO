@@ -1,5 +1,34 @@
 ---
-
+import FooterBox from "./FooterBox.astro";
 ---
 
-<p>footer</p>
+<footer class="bg-coffee-950 pt-20">
+    <div
+        class="max-w-5xl xl:max-w-7xl mx-auto mt-10 flex flex-wrap justify-evenly gap-7 px-5 items-center md:flex-row md:justify-between md:gap-5 lg:px-0"
+    >
+        <FooterBox heading="Ubicación">
+            <p>Coffe astro street 19</p>
+            <p>CDMX, México</p>
+        </FooterBox>
+        <FooterBox heading="Reservación">
+            <p>Tel. 55 1234 5678</p>
+            <button
+                class="bg-coffee-200 px-5 py-2 rounded hover:bg-coffee-300 transition-colors"
+            >
+                <a href="tel:+5512345678" class="text-coffee-950 font-bold"
+                    >Llamar</a
+                >
+            </button>
+        </FooterBox>
+        <FooterBox heading="Horario">
+            <p>Lun-Jue: 11:00 - 22:00</p>
+            <p>Vie-Sab: 11:00 - 24:00</p>
+            <p>Dom: Cerrado</p>
+        </FooterBox>
+    </div>
+    <p class="py-10 text-center text-white text-sm">
+        Todos los derechos reservados. La Cafetería Astro &copy; {
+            new Date().getFullYear()
+        }
+    </p>
+</footer>
